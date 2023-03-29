@@ -24,7 +24,7 @@ def Rzyz(r,b,a):#ZYZ歐拉角
     return(np.mat([[cos(a)*cos(b)*cos(r)-sin(a)*sin(r),-cos(a)*cos(b)*sin(r)-sin(a)*cos(r),cos(a)*sin(b)],
                      [sin(a)*cos(b)*cos(r)+cos(a)*sin(r),-sin(a)*cos(b)*sin(r)+cos(a)*cos(r),sin(a)*sin(b)],
                      [-sin(b)*cos(r),sin(b)*sin(r),cos(b)]]))  
-mat=Rzyz(30,0.00001,10)
+mat=Rzyz(30,15,10)
 print(mat)
 b=atan2((mat[2,0]**2+mat[2,1]**2)**(1/2),mat[2,2])
 a=atan2(mat[1,2]/sin(b),mat[0,2]/sin(b))
