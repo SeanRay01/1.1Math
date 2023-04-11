@@ -15,10 +15,10 @@ def DH(i,a,alpha,d,theta):
                      [sin(theta[i])*cos(alpha[i]),cos(theta[i])*cos(alpha[i]),-sin(alpha[i]),-sin(alpha[i])*d[i]],
                      [sin(theta[i])*sin(alpha[i]),cos(theta[i])*sin(alpha[i]),cos(alpha[i]),cos(alpha[i])*d[i]],
                      [0,0,0,1]]))
-a_list = [0,0,150]#參數a
-alpha =  [0,-90,0]#參數
-d_list = [10,20,30]#參數d
-theta =  [45,0,0]#參數
+a_list = [0,0,150]#參數:a
+alpha =  [0,-90,0]#參數:阿法
+d_list = [10,20,30]#參數:d
+theta =  [45,0,0]#參數:西達
 t01=DH(1,a_list,alpha,d_list,theta)
 t12=DH(2,a_list,alpha,d_list,theta)
 t23=DH(3,a_list,alpha,d_list,theta)
