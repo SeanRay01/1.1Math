@@ -19,6 +19,6 @@ def Rzyz(r,b,a):#ZYZ歐拉角
 mat=Rzyz(15,25,20)
 print(mat)
 b=atan2((mat[2,0]**2+mat[2,1]**2)**(1/2),mat[2,2])
-a=atan2(mat[1,2]/sin(b),mat[0,2]/sin(b))
+a=atan2(mat[1,2]/sin(b),mat[0,2]/sin(b))    
 r=atan2(mat[2,1]/sin(b),-mat[2,0]/sin(b))
 print('r=',r,'b=',b,'a=',a)
